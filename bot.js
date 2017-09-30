@@ -79,7 +79,8 @@ if (command === "setgame") {
     
     if (command === "cmds") {
         let author = message.author
-        message.author.send('**Prefix is * ** \n **Commands are:** \n *8ball | Answers a question for you \n *kill | "Kills" You engage in a duel with the player \n *embed | Embeds a message for you
+        message.channel.send('The command list has been sent to you!')
+        message.author.send('**Prefix is * ** \n **Commands are:** \n *8ball | Answers a question for you \n *kill | "Kills" You engage in a duel with the player \n *embed | Embeds a message for you')
                             }
       if (message.content.startsWith(prefix + "8ball" )) {
       let author = message.author
