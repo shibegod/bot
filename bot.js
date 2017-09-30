@@ -27,6 +27,6 @@ if (command === "setgame") {
         message.channel.send('game has been set')
     }
 }
-})
+});
     
     bot.login(process.env.BOT_TOKEN); 
