@@ -52,6 +52,31 @@ if (command === "setgame") {
     }
 }
     
+    if (command === "announce") {
+        if (message.member.roles.exists('name', 'Owner') {
+             let msg = message.content.split(' ').slice(1).join(' ');
+    if (!msg) {
+        message.channel.send('Announce what?')
+
+        return;
+     }   
+     message.delete()
+     message.channel.send('', {
+     embed: {
+         color: 000000,
+         author: {
+             name: message.author.tag,
+             icon_url: message.author.avatarURL
+         },
+         title: 'Announcement',
+         description: `${msg}`,
+
+         timestamp: new Date(),
+         footer: {
+             text: bot.user.username,
+             icon_url: bot.user.avatar.URL,
+         }}})}};
+    
     if (command === "embed") {
     let msg = message.content.split(' ').slice(1).join(' ');
     if (!msg) {
