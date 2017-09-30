@@ -55,7 +55,8 @@ if (command === "setgame") {
 
     
     if (command === "announce") {
-        if (message.member.roles.exists('name', 'Owner') {
+        let author = message.author
+        if (message.author.id == "343036330671865856") {
              let msg = message.content.split(' ').slice(1).join(' ');
     if (!msg) {
         message.channel.send('Announce what?')
