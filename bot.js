@@ -27,5 +27,6 @@ if (message.content.startsWith(prefix + "setgame")) {
         message.channel.send('game has been set')
     }
 }
+})
     
     bot.login(process.env.BOT_TOKEN); 
