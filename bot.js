@@ -49,7 +49,7 @@ if (command === "setgame") {
         let argsresult = args.join(' ')
         bot.user.setGame(argsresult)
         message.channel.send('game has been set')
-        console.log(`${message.author} set the game
+        console.log(`${message.author} set the game`);
     }
 
 }
