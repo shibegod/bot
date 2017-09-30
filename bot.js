@@ -76,6 +76,11 @@ if (command === "setgame") {
              icon_url: bot.user.avatar.URL,
          }}})};
     
+    
+    if (command === "cmds") {
+        let author = message.author
+        message.author.send('**Prefix is * ** \n **Commands are:** \n *8ball | Answers a question for you \n *kill | "Kills" You engage in a duel with the player \n *embed | Embeds a message for you
+    
       if (message.content.startsWith(prefix + "8ball" )) {
       let author = message.author
 if (args[2]) message.channel.sendMessage(kill[Math.floor(Math.random() * kill.length)]);
