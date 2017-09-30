@@ -20,7 +20,7 @@ bot.on("message", message => {
   let args = message.content.split(" ").slice(1);
   console.log(command);
     
-if (message.content.startsWith(prefix + "setgame")) {
+if (command === "setgame") {
     if (message.author.id == "251938340671062036") {
         let argsresult = args.join(' ')
         bot.user.setGame(argsresult)
