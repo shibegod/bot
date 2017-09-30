@@ -10,7 +10,7 @@ bot.on('guildMemberAdd',  (member) => {
     });
 
 bot.on('guildMemberRemove', (member) => {
-    member.guild.channels.get("343037231734456322").send('Goodbye dickhead' + member)
+    member.guild.channels.get("343037231734456322").send('Goodbye dickhead ' + member)
 });
 bot.on("message", message => {
       if (message.author.bot) return;
