@@ -53,6 +53,9 @@ if (command === "setgame") {
 
 }
 
+    if (command === "lewd") {
+        message.channel.send('*succs him dry*')
+        {
     
     if (command === "announce") {
         let author = message.author
