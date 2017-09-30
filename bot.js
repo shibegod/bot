@@ -1,5 +1,27 @@
 const Discord = require("discord.js");
 const prefix = "*"
+
+var kill = [
+    "`Yes`", 
+    "`No`",
+    "`Maybe`",
+    "*Sign pointing to yes*",
+    "*Sign pointing to no*",
+    "`It can be proved`",
+    "`It is certain`",
+    "`I don't know for sure, but I read it as negative`"
+];
+
+var fortunes = [
+    "You try throwing a bomb at them. The bomb fails miserably and you are stared at with shame.",
+    "You throw a bomb at them, they explode in blood and gore while you laugh",
+    "You bring a knife to a gun fight, they pierce you with bullets.",
+    "You stab them in the heart.",
+    "You try stabbing them but they're 2 fst  4 u fag"
+
+    
+];
+
 var bot = new Discord.Client();
 bot.on("ready", () => {
     console.log("Ready");
@@ -29,6 +51,18 @@ if (command === "setgame") {
         message.channel.send('game has been set')
     }
 }
+    
+      if (message.content.startsWith(prefix + "8ball" )) {
+      let author = message.author
+if (args[2]) message.channel.sendMessage(kill[Math.floor(Math.random() * kill.length)]);
+console.log(`8ball by ${author} or ${author.username} ` + message)
+      } else
+      
+           if (message.content.startsWith(prefix + "kill")) {
+      let author = message.author
+    let member = message.mentions.members.first();
+    if (args[0]) message.channel.sendMessage(`${author} ` + fortunes[Math.floor(Math.random() * fortunes.length)]);
+  } 
 });
     
     bot.login(process.env.BOT_TOKEN); 
