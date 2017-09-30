@@ -52,6 +52,30 @@ if (command === "setgame") {
     }
 }
     
+    if (command === "embed") {
+    let msg = message.content.split(' ').slice(1).join(' ');
+    if (!msg) {
+        message.channel.send('Embed what?')
+
+        return;
+     }   
+     message.delete()
+     message.channel.send('', {
+     embed: {
+         color: 000000,
+         author: {
+             name: message.author.tag,
+             icon_url: message.author.avatarURL
+         },
+         title: 'Say',
+         description: `${msg}`,
+
+         timestamp: new Date(),
+         footer: {
+             text: bot.user.username,
+             icon_url: bot.user.avatar.URL,
+         }}})};
+    
       if (message.content.startsWith(prefix + "8ball" )) {
       let author = message.author
 if (args[2]) message.channel.sendMessage(kill[Math.floor(Math.random() * kill.length)]);
