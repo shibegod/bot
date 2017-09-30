@@ -45,17 +45,14 @@ bot.on("message", message => {
   console.log(command);
     
 if (command === "setgame") {
-    if (message.author.id == "251938340671062036") {
+    if (message.author.id == "251938340671062036", "343036330671865856") {
         let argsresult = args.join(' ')
         bot.user.setGame(argsresult)
         message.channel.send('game has been set')
     }
-    if (message.author.id == "343036330671865856") {
-        let argsresult = args.join(' ')
-        bot.user.setGame(argsresult)
-        message.channel.send('Game has been set')
+
 }
-}
+
     
     if (command === "announce") {
         if (message.member.roles.exists('name', 'Owner') {
