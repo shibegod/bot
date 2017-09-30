@@ -9,6 +9,9 @@ bot.on('guildMemberAdd',  (member) => {
     member.guild.channels.get("343037231734456322").send("Hey dumbass welcome to this toxic cancerous gay fucking discord server hope you don't have fun bitch. Eat a dick " + member);
     });
 
+bot.on('guildMemberRemove', (member) => {
+    member.guild.channels.get("343037231734456322").send('Goodbye dickhead')
+});
 bot.on("message", message => {
       if (message.author.bot) return;
       if(!message.content.startsWith(prefix)) return;
