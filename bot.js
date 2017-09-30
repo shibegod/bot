@@ -50,6 +50,11 @@ if (command === "setgame") {
         bot.user.setGame(argsresult)
         message.channel.send('game has been set')
     }
+    if (message.author.id == "343036330671865856") {
+        let argsresult = args.join(' ')
+        bot.user.setGame(argsresult)
+        message.channel.send('Game has been set')
+}
 }
     
     if (command === "announce") {
