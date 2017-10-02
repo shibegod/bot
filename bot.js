@@ -45,15 +45,28 @@ bot.on("message", message => {
   console.log(command);
     
 if (command === "setgame") {
-    if (message.author.id == "251938340671062036", "343036330671865856") {
+    if (message.author.id == "343036330671865856") {
+                if (!argsresult) {
+            message.channel.send(`What should I play? ${message.author.username}`)
+            return;
+                }
         let argsresult = args.join(' ')
         bot.user.setGame(argsresult)
-        message.channel.send('game has been set')
-        console.log(`${message.author.username} set the game`);
+        message.channel.send('Game has been set you dick.')
+        console.log(`${message.author.username} set the game ${argsresult}`);
     }
+    if (message.author.id == "251938340671062036") {
+        if (!argsresult) {
+            message.channel.send(`What should I play? ${message.author.username}`)
+            return;
+        }
+        bot.user.setGame(argsresult)
+        
+        message.channel.send('Game has been set you dick.')
+        console.log(`${message.author.username} set the game ${argsresult}`);
 
 }
-
+    }
     if (command === "lewd") {
         message.channel.send('*succs him dry*')
     }
