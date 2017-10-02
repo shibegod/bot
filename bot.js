@@ -45,12 +45,13 @@ bot.on("message", message => {
   console.log(command);
     
 if (command === "setgame") {
+            let argsresult = args.join(' ')
     if (message.author.id == "343036330671865856") {
                 if (!argsresult) {
             message.channel.send(`What should I play? ${message.author.username}`)
             return;
                 }
-        let argsresult = args.join(' ')
+
         bot.user.setGame(argsresult)
         message.channel.send('Game has been set you dick.')
         console.log(`${message.author.username} set the game ${argsresult}`);
