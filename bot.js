@@ -9,11 +9,12 @@ var ya = [
     "There are things in the world that shouldnt've been born. Welcome. ",
     "Yo dumbass, welcome. ",
     "Hey dickhead, welcome. ",
-    "Piece of shit, welcome. ",
-    "Retard welcome. ",
+    "Welcome piece of shit. ",
+    "Welcome retard. ",
     "You're a faggot, welcome. ",
-    "Eat a dick. Welcome. ",
+    "Welcome, eat a dick ",
     "Welcome. "
+    "Hey dumbass welcome to this toxic cancerous gay fucking discord server hope you don't have fun bitch. Eat a dick "
     ];
 
 var kill = [
