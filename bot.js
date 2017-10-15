@@ -5,15 +5,15 @@ const prefix = "*"
 var ya = [
     "Welcome to the stupid fucking server dickhead, I hope you don't have fun ",
     "Hey piece of shit, welcome. I hope you suck dick ",
-    "Dumbass, gtfo. ",
-    "There are things in the world that shouldnt've been born. ",
-    "Yo dumbass. ",
-    "Hey dickhead. ",
-    "Piece of shit, welcome ",
-    "Retard. ",
-    "You're a faggot. ",
-    "Eat a dick. ",
-    "Get the fuck out. "
+    "Welcome dumbass. ",
+    "There are things in the world that shouldnt've been born. Welcome. ",
+    "Yo dumbass, welcome. ",
+    "Hey dickhead, welcome. ",
+    "Piece of shit, welcome. ",
+    "Retard welcome. ",
+    "You're a faggot, welcome. ",
+    "Eat a dick. Welcome. ",
+    "Welcome. "
     ];
 
 var kill = [
