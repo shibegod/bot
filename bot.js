@@ -13,7 +13,7 @@ var ya = [
     "Welcome retard. ",
     "You're a faggot, welcome. ",
     "Welcome, eat a dick ",
-    "Welcome. "
+    "Welcome. ",
     "Hey dumbass welcome to this toxic cancerous gay fucking discord server hope you don't have fun bitch. Eat a dick "
     ];
 
