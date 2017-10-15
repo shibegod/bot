@@ -1,6 +1,21 @@
 const Discord = require("discord.js");
 const prefix = "*"
 
+
+var ya = [
+    "Welcome to the stupid fucking server dickhead, I hope you don't have fun",
+    "Hey piece of shit, welcome. I hope you suck dick",
+    "Dumbass, gtfo.",
+    "There are things in the world that shouldnt've been born.",
+    "Yo dumbass.",
+    "Hey dickhead.",
+    "Piece of shit, welcome",
+    "Retard.",
+    "You're a faggot.",
+    "Eat a dick.",
+    "Get the fuck out."
+    ];
+
 var kill = [
     "`Yes`", 
     "`No`",
@@ -28,7 +43,7 @@ bot.on("ready", () => {
 });
 
 bot.on('guildMemberAdd',  (member) => {
-    member.guild.channels.get("343037231734456322").send("Hey dumbass welcome to this toxic cancerous gay fucking discord server hope you don't have fun bitch. Eat a dick " + member);
+    member.guild.channels.get("343037231734456322").send(ya[Math.floor(Math.random() * ya.length)] + member);
     });
 
 bot.on("message", message => {
